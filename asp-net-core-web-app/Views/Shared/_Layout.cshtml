@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - GrupoIBM</title>
+    <link rel="shortcut icon" href="~/images/IBMGroup.png" type="image/x-icon">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/estilos.css" />
+    <link rel="stylesheet" href="~/css/normalize.css">
+
+</head>
+<body>
+
+    <div>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+
+    <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "5bdca482-3db0-4aaf-abb5-829ae4a4a068", // The ID of this integration.
+                region: "us-south", // The region your integration is hosted in.
+                serviceInstanceID: "18041992-014e-45e2-9c57-14c8a35d6ec5", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+                };
+            setTimeout(function(){
+                const t=document.createElement('script');
+                t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
+                document.head.appendChild(t);
+            });
+    </script>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Smart Campus IBM</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a asp-controller="Home" 
+                        asp-action="Watson" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav__links" asp-area="" asp-controller="Home" 
+                        asp-action="Watson">Acerca de Watson Assistent</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter"></h2>
+                <div class="footer__ubi">
+                    <div class="footer__ubi__container container">
+                        <div class="footer__ubi__texts">
+
+                            <h2 class="footer__ubi__subtitle">Ubicación</h2>
+                            <p class="footer__ubi__paragraph">
+                                La Molina, Av. la Fontana 1250, Lima 15024
+                            </p>
+
+                            <h2 class="footer__ubi__subtitle">Sitio Web</h2>
+                            <p class="footer__ubi__paragraph">
+                                <a href="https://www.usmp.edu.pe/fia/" target="_blank">usmp.edu.pe</a> 
+                            </p>
+
+                            <h2 class="footer__ubi__subtitle"><a href="https://www.usmp.edu.pe/fia/pdf/directorio.pdf" target="_blank">Canales de atención</a></h2>
+
+                            <h2 class="footer__ubi__subtitle">Telefono</h2>
+                            <p class="footer__ubi__paragraph">
+                                +5112086000
+                            </p>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="~/images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="~/images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="~/images/youtube.svg" class="footer__img"></a>
+            </div>
+            <br>
+            <h3 class="footer__copyright">  Derechos reservados &copy; Grupo IBM USMP</h3>
+        </section>
+    </footer>
+
+
+    <script src="~/js/slider.js"></script>
+    <script src="~/js/questions.js"></script>
+    <script src="~/js/menu.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

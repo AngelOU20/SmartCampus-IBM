@@ -1,0 +1,273 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title"> Smart Campus IBM</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a asp-controller="Home" asp-action="Index" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a asp-controller="Home" asp-action="Watson" class="nav__links">Acerca de Watson Assistant</a>
+                </li>
+
+                <img src="~/images/close.svg" class="nav__close" alt="" >
+            </ul>
+
+            <div class="nav__menu">
+                <img src="~/images/menu.svg" class="nav__img" alt="">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">
+                <img src="~/images/usmp.png" width="100%" height="100%" alt="">
+            </h1>
+            <p class="hero__paragraph">
+
+            </p>
+            
+        </section>
+    </header>
+
+
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">ING. DE COMPUTACIÓN Y SISTEMAS</h2>
+            <p class="about__paragraph">
+                Ingeniería de Computación y Sistemas es un programa de sistemas de información enfocado en gestión y negocios como su 
+                entorno de aplicación.
+
+                El Ingeniero de Computación y Sistemas puede incorporarse a instituciones públicas y privadas de diversos campos, 
+                como desarrollo de sistemas, sistemas de información, inteligencia artificial y robótica, gestión de TI, sistemas de 
+                comunicaciones, soporte de gestión empresarial, sistemas computacionales, docencia e investigación aplicada.</p>
+            <div class="about__main">         
+                <article class="about__info">
+                    <h3 class="about__title">Misión</h3>
+                    <p class="about__paragrah">
+                        Formar profesionales en la especialidad de Ingeniería de Computación y Sistemas con sólidos valores, competentes 
+                        y creativos para resolver problemas en el contexto laboral y social; desarrollar habilidades para responder a los 
+                        cambios y desafíos del entorno; fomentar la investigación aplicada en el desarrollo de sistemas de información; 
+                        promover actividades de extensión y proyección social que beneficien a la sociedad.
+                    </p>
+                </article>
+
+                <article class="about__info">
+                    <h3 class="about__title">Visión</h3>
+                    <p class="about__paragrah">
+                        Llegar a ser la mejor Escuela Profesional del país dedicada a la formación de Ingenieros de Computación y 
+                        Sistemas de clase internacional; con una cultura institucional en la que se fortalezcan los valores; comprometida 
+                        con la búsqueda constante de la excelencia, el desarrollo integral del estudiante, la investigación y su proyección a la sociedad.
+                    </p>
+                </article>              
+            </div>
+        </section>
+
+
+        <section class="ubi">
+            <div class="ubi__container container">
+
+                <div class="ubi__texts">
+                    <h2 class="ubi__subtitle">Smart Campus IBM</h2>
+                    <p class="ubi__paragraph">
+                        Nuestro proyecto trata de crear un asistente inteligente con Watson para resolver consultas diarias de los 
+                        estudiantes de Universidad San Martin de Porres sobre los temas que son los docentes, aulas, cursos y horarios 
+                        ya que a veces siempre hay problemas porque no saben el número de laboratorio o aula que les toco o en que 
+                        pabellón se encuentra ubicado el aula, la información detallada del curso ya que cada semestre cambia el silabo 
+                        , docentes, horarios con el objetivo resolver sus dudas, brindarles la información necesaria a los estudiantes a 
+                        cualquier hora del día.
+
+                    </p>
+                </div>
+
+                <figure class="ubi__picture">
+                     <img src="~/images/smartCampusIbm.jpg" class="ubi__img" alt="">
+                </figure>
+            </div>
+        </section>
+
+        <section class="block container">
+            <div class="block__table">
+                <p class="block__text">"Tratando de satisfacer las necesidades del presente sin comprometer las necesidades del mañana, trabajando en un desarrollo sostenible."</p>
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div>
+                <h2 class="test__subtitle">Herramientas Utilizadas</h2>
+            </div>
+            <div class="testimony__container container">
+                <img src="~/images/leftarrow.svg" class="testimony__arrow" id="before" alt="">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle__t">Watson <span class="testimony__course">Assistant</span></h2>
+                        <p class="testimony__review">
+                            Es un servicio de IBM que usa IA para llevar interacciones con humanos utilizando lenguaje natural en 
+                            texto y/o audio. Los usuarios pueden hacer preguntas, dar información e interactuar 
+                            de acuerdo a sus necesidades.
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="~/images/watson.png" class="testimony__img" alt="">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle__t">Azure  <span class="testimony__course">DevOps</span></h2>
+                        <p class="testimony__review">
+                            Es un producto de Microsoft que proporciona control de versiones, informes, gestión de requisitos, gestión de proyectos, 
+                            compilaciones automatizadas, pruebas y capacidades de gestión de versiones. Cubre todo el ciclo de vida de la aplicación 
+                            y habilita las capacidades de DevOps. 
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="~/images/azureDevOps.png" class="testimony__img" alt="">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle__t">IBM <span class="testimony__course">Cloudant</span></h2>
+                        <p class="testimony__review">
+                            IBM Cloudant es una base de datos de documentos JSON totalmente gestionada que ofrece un escalado independiente sin servidor de la capacidad de rendimiento y el almacenamiento aprovisionados. 
+                            Cloudant es compatible con Apache CouchDB y se puede acceder a él a través de una API HTTPS fácil de usar para aplicaciones web, móviles y de IoT.
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="~/images/cloudant.png" class="testimony__img" alt="">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle__t">IBM <span class="testimony__course">Toolchain</span></h2>
+                        <p class="testimony__review">
+                            Toolchain es un conjunto de integraciones de herramientas que dan soporte a las tareas de desarrollo, despliegue y operaciones. La potencia colectiva de una cadena de herramientas es mayor que la suma de sus integraciones de herramientas individuales.
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="~/images/toolchain.png" class="testimony__img" alt="">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="5">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle__t">Visual Studio <span class="testimony__course">Code</span></h2>
+                        <p class="testimony__review">
+                           Es un editor de código fuente que incluye soporte para la depuración, control integrado de Git, 
+                           resaltado de sintaxis.
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="~/images/VSCode.png" class="testimony__img" alt="">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="6">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle__t">.Net <span class="testimony__course">Core 3.1</span></h2>
+                        <p class="testimony__review">
+                           Framework de código abierto y multiplataforma para la creación de aplicaciones modernas conectadas a Internet, como aplicaciones web y APIs Web. 
+                           Se pueden desarrollar y ejecutar aplicaciones ASP.NET Core en Windows, Mac y Linux.
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="~/images/netcore.png" class="testimony__img" alt="">
+                    </figure>
+                </section>
+
+                <img src="~/images/rightarrow.svg" class="testimony__arrow" id="next" alt="">
+            </div>
+        </section>
+
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas y respuestas </h2>
+
+            <section class="questions__container">
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cómo se desarrollaán las clases virtuales?
+                            <span class="questions__arrow">
+                                <img src="~/images/arrow.svg" class="questions__img" alt="">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">
+                            Ante la emergencia sanitaria por el COVID-19, las sesiones presenciales de nuestra Facultad han migrado a 
+                            la plataforma online “Mi campus”, a través de la cual podrás llevar los cursos de tu carrera de manera 
+                            virtual.
+
+                            Para acceder a la plataforma, debes obtener tu usuario y contraseña. Al registrarte en la plataforma, 
+                            selecciona la opción “Olvidó su nombre de usuario o contraseña” y deberás seguir las instrucciones del 
+                            formulario al que redirige.
+
+                            Finalmente, te informamos que hemos reprogramado las fechas de pago para el semestre 2020-I. Puedes 
+                            visualizar el nuevo cronograma en la página web de nuestra Facultad.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cuál es el procedimiento para recategorizar la escala de pensiones, solicitar una beca o beca parcial?
+                            <span class="questions__arrow">
+                                <img src="~/images/arrow.svg" class="questions__img" alt="">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">
+                            Primero, debes comunicarte con la asistenta social de la Facultad, a través del correo electrónico obu_fia@usmp.pe y así agendar una 
+                            entrevista virtual en la que podrás explicar y detallar el motivo de tu solicitud. La asistenta social revisará la escala y/o 
+                            beneficio con el que cuentas en la actualidad, tu récord de notas, entre otros documentos. Asimismo, te solicitará el envío de 
+                            documentación adicional que sustente tu situación y al finalizar la evaluación te enviará una respuesta.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué pasa si no hago la reserva de matrícula?
+                            <span class="questions__arrow">
+                                <img src="~/images/arrow.svg" class="questions__img" alt="">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">
+                            Si no pudiste realizar tu reserva de matrícula para este semestre, en el siguiente semestre tendrás que realizar la Reactualización de Matrícula.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Ya puedo encontrar mi beneficio en el sistema de pagos SAP?
+                            <span class="questions__arrow">
+                                <img src="~/images/arrow.svg" class="questions__img" alt="">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">
+                            Podrás visualizar la actualización de tu beneficio a través de Intranet. En caso no puedas acceder, por favor, envía un correo a sapfia@usmp.pe
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+    </main>
