@@ -13,7 +13,7 @@
                     <a asp-controller="Home" asp-action="Index" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a asp-controller="Home" asp-action="Watson" class="nav__links">Acerca de Watson Assistant</a>
+                    <a asp-controller="Home" asp-action="Watson" class="nav__links">Acerca del Asistente</a>
                 </li>
 
                 <img src="~/images/close.svg" class="nav__close" alt="" >
@@ -68,42 +68,44 @@
             </div>
             <br>
             <br>
+            <br>
             <h2 class="subtitle">¿Como usar ChatBot?</h2>
                     <p class="about__paragraph">En la parte inferior derecha encontraras el incono de nuestro asistente, que estara listo para responder 
                         a las dudas que puedas tener acerca de nuestra Facultad, solo necesitas empezar una conversacion con el, de la forma en la que iniciarias 
                         una conversacion con una persona normal, y te respondera de la misma forma, listo para resolver tus dudas.
-                    </p>
-                    <br>
-                    <br>
-            <h2 class="subtitle">Watson Speech to text</h2>
-            <br>
-                    <p class="about__paragraph">IBM Watson Speech to Text es una solución cloud native que utiliza algoritmos de Inteligencia Artificial y Deep Learning
-                         para aplicar conocimientos sobre gramática, estructura del lenguaje y composición de señales de audio / voz para crear un reconocimiento de voz 
-                         personalizable para una transcripción de texto óptima.
-                    </p>
-
-            <div class="about__main">         
-                <article class="about__info">
-                    <h3 class="about__title" style="text-align: center;">Potente reconocimiento de voz en tiempo real</h3>
-                    <p class="about__paragrah">
-                        Transcriba automáticamente audios de 7 idiomas en tiempo real. Identifique y transcriba rápidamente 
-                        lo que se discute, incluso audios de baja calidad, de varios formatos de audio e interfaces de programación 
-                        (HTTP REST, Websocket, Asynchronous HTTP).
-                    </p>
-                </article>
-
-                <article class="about__info">
-                    <h3 class="about__title" style="text-align: center;">Motor de voz altamente preciso</h3>
-                    <p class="about__paragrah">
-                        Personalice su modelo para mejorar la precisión para el idioma y el contenido que más le importan, como los nombres de productos, los asuntos confidenciales o los nombres de los individuos. Reconozca los diferentes oradores de su audio e identifique palabras clave específicas en tiempo real con alta precisión y confianza.
-                    </p>
-
-                    
-                </article>      
-                        
+                    </p>                 
             </div>
+        </section>
 
-
+        <section class="block_chatbot">
+            <div class="block__table__chatbot">
+                <div class="block__chatbot">
+                    <img src="~/images/chatbotWA.jpg" class="img__chatbot" alt="">                    
+                </div>
+                <div class="block__chatbot__cursos">
+                    <h3 class="block__chatbot__title">Consultas sobre los cursos:</h3>
+                    <div class="block__cursos">
+                        <div class="card">
+                            <img src="~/images/libro.jpg" class="img__curso" alt="">   
+                            <h4 class="curso__title">Taller de Proyectos</h4>                            
+                        </div>
+                        <div class="card">
+                            <img src="~/images/libro.jpg" class="img__curso" alt="">
+                            <h4 class="curso__title">Ingeniería de Software II</h4> 
+                        </div>
+                    </div>
+                    <div class="block__cursos">
+                        <div class="card">
+                            <img src="~/images/libro.jpg" class="img__curso" alt="">
+                            <h4 class="curso__title">Inteligencia Artificial</h4> 
+                        </div>
+                        <div class="card">
+                            <img src="~/images/libro.jpg" class="img__curso" alt="">
+                            <h4 class="curso__title">Gestión Financiera</h4> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>

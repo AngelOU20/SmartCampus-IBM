@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 :root {
     --padding-container: 100px 0;
@@ -310,6 +312,74 @@ body {
     font-style: italic;
     font-size: 30px;
     text-align: center;
+}
+
+/*block assistant*/
+
+.block_chatbot{
+    background-color: #f2f2f2;
+    padding: 80px 200px;
+}
+
+.block__table__chatbot{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.block__chatbot__cursos{
+    align-self: center;
+    justify-self: center;
+}
+
+.block__chatbot__title{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.img__chatbot{
+    width: 80%;
+    overflow: hidden;
+}
+
+.block__cursos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 30px;
+}
+
+.card{
+    padding: 50px 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 24px 55px rgba(17, 29, 48, .26);
+    color: #4e384f;
+}
+
+.img__curso{
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    transition: transform .4s;
+}
+
+.img__curso:hover{
+    transform: scale(1.09);
+}
+
+.curso__title{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 /* Testimony */
@@ -739,6 +809,74 @@ body {
     .block__block{
         font-size: 2rem;
     }
+
+    /*block assistant*/
+
+    .block_chatbot{
+        background-color: #f2f2f2;
+        padding: 40px 0px;
+        overflow: hidden;
+    }
+
+    .block__table__chatbot{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .block__chatbot img{
+        width: 90%;
+    }
+
+    .block__chatbot__title{
+        font-size: 25px;
+    }
+
+    .block__chatbot__title::after{
+        content: "";
+        margin: auto;
+        display: block;
+        width: 100px;
+        margin-top: 10px;
+        height: 4px;
+        background-color: #572364;
+    }
+
+    .curso__title{
+        font-size: 20px;
+    }
+
+    .block__cursos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin: 10px 0;
+    }
+
+    .card{
+        padding: 20px 0px;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+        cursor: pointer;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .img__curso{
+        align-self: center;
+        justify-self: center;
+        width: 90%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .curso__title{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    /*tes*/
 
     .testimony{
         --padding-container: 60px 0;
