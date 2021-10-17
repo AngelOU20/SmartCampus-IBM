@@ -318,7 +318,7 @@ body {
 
 .block_chatbot{
     background-color: #f2f2f2;
-    padding: 80px 200px;
+    padding: 80px 100px;
 }
 
 .block__table__chatbot{
@@ -338,7 +338,10 @@ body {
 }
 
 .img__chatbot{
-    width: 90%;
+    width: 70%;
+    height: 900px;
+    align-self: center;
+    justify-self: center;
 }
 
 .block__cursos{
@@ -825,6 +828,9 @@ body {
 
     .block__chatbot img{
         width: 90%;
+        height: 600px;
+        align-self: center;
+        justify-self: center;
     }
 
     .block__chatbot__title{
