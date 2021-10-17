@@ -338,7 +338,7 @@ body {
 }
 
 .img__chatbot{
-    width: 70%;
+    width: 75%;
     height: 900px;
     align-self: center;
     justify-self: center;
@@ -828,7 +828,7 @@ body {
 
     .block__chatbot img{
         width: 90%;
-        height: 600px;
+        height: 700px;
         align-self: center;
         justify-self: center;
     }
