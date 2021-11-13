@@ -1,0 +1,109 @@
+@{
+    ViewData["Title"] = "IOT";
+}
+
+    <header class="head1">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title"> Smart Campus IBM</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a asp-controller="Home" asp-action="Index" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a asp-controller="Home" asp-action="Watson" class="nav__links">Acerca del Asistente</a>
+                </li>
+                <li class="nav__items">
+                    <a asp-controller="Home" asp-action="iot" class="nav__links">Acerca del IOT</a>
+                </li>
+
+                <img src="~/images/close.svg" class="nav__close" alt="" >
+            </ul>
+
+            <div class="nav__menu">
+                <img src="~/images/menu.svg" class="nav__img" alt="">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">
+                <img src="~/images/iot1.png" width="100%" height="90%" alt="">
+            </h1>
+            <p class="hero__paragraph">
+
+            </p>
+            
+        </section>
+    </header>
+
+
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Cómo funciona?</h2>
+            <p class="about__paragraph">Watson Assistant es un servicio de inteligencia artificial ofrecido por IBM que nos permite crear un 
+                chatbot en vivo para incluirlo en cualquier dispositivo, aplicación o medio. Este chatbot resuleve las consultas de los alumnos de la FIA del septimo ciclo.</p>
+
+            <div class="about__main">         
+                <article class="about__info">
+                    <h3 class="about__title" style="text-align: center;">IOT Platform</h3>
+                    <p class="about__paragrah">
+                        Una plataforma IoT logra conectar de forma eficaz los diferentes software necesarios para hacer llegar Internet a un determinado dispositivo con el hardware del que este se compone. 
+                        Para lograrlo, utiliza una gran cantidad de protocolos de comunicación distintos (como la conexión directa o en pasarela).
+                    </p>
+                </article>
+
+                <article class="about__info">
+                    <h3 class="about__title" style="text-align: center;">¿Que es Node Red?</h3>
+                    <p class="about__paragrah">
+                        Node-RED, herramienta que proporciona un editor de flujo basado en navegador que facilita el cableado de flujos utilizando 
+                        la amplia gama de nodos de la paleta. Luego, los flujos se pueden implementar en el tiempo de ejecución.
+                        Una biblioteca incorporada que le permite guardar funciones, plantillas o flujos útiles para su reutilización.
+                    </p>
+                </article>          
+            </div>
+            <br>
+            <br>
+            <p class="about__paragrah">
+                        Node-RED está en la plataforma IBM Cloud como una de las aplicaciones conectadas al IoT Platform de Watson el cual esta
+                        conectado al dispositvo sensor.
+            </p>
+            <br>
+            <a class="btn__enlace" target="_blank" href="https://node-red-scvle-iot.mybluemix.net/red/">Visite el Node-Red</a> 
+        </section>
+
+    </main>
+
+<style>
+
+.btn__enlace{
+    text-decoration: none;
+    background: transparent;
+    color: black;
+    border: 2px solid #4E4AB6;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    /* animate and time the transitions*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.2s;
+}
+
+.btn__enlace:hover{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.2s;
+}
+
+</style>
+

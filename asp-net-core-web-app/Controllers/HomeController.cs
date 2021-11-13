@@ -28,7 +28,7 @@ namespace asp_net_core_web_app.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult iot()
         {
             return View();
         }
